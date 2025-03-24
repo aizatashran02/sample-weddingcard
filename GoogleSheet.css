@@ -18,7 +18,7 @@ body {
 
 /* Container styles */
 .container {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Align content to the top */
