@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="GoogleSheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="intro" id="intro">
+        <h7>Azlan & Najwa</h7>
+        <button class="btn-buka" onclick="openWeddingCard()">Buka</button>
+    </div>
+
+    <script>
+        function openWeddingCard() {
+            document.getElementById("intro").style.display = "block";
+            
+        }
+    </script>
+
+
+    <audio id="background-music" loop>
+        <source src="audio/LeeHi-ONLY.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Butang Muzik -->
+    <div id="music-button" onclick="toggleMusic()">
+        <span id="music-icon">🎵</span> LEE HI - Only
+    </div>    
+
+
+    <div class="container" id="wedding-card" >
+        <!-- Wedding Invitation Content -->
+        <div class="section">
+            <h1>Walimatulurus</h1>
+            <p class="names">Farid Naufal</p>
+            <p class="names">& </p>
+            <p class="names">Farah Nabilah</p>
+            <p class="tarikh">October 15, 2025</p>
+            <div class="bubbles">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <h2 class="bismillah">
+                <img src="bismillah.png" alt="Bismillah" />
+            </h2>
+            <p class="Salam">ASSALAMUALAIKUM W.B.T</p>
+            <p class="Parents">Shaharom Bin Bahari &amp; Zubaidah Binti Hamdan</p>
+            <p class="Jemput">Dengan segala hormatnya menjemput Dato’/Datin/Tuan/Puan/Encik/Cik dan seisi keluarga ke majlis perkahwinan putera kami bersama pasangannya:</p>
+            <h3>Syed Azlan Izzuddin Shah Bin Syed Shaharom</h3>
+            <p class="symboland">&</p>
+            <h3>Nurul Nazatul Najwa Binti Mior Rahim</h3>
+
+            <!------------------- LOGO CALENDAR, MASA AND LOCATION ------------>
+            <div class="event-info">
+                <div class="icon-section">
+                    <i class="fa-solid fa-calendar"></i>
+                    <p class="date">JUMAAT 02 MEI 2025</p>
+                </div>
+        
+                <div class="icon-section">
+                    <i class="fa-solid fa-clock"></i>
+                    <p class="time">10:00 AM – 5:00 PM</p>
+                </div>
+        
+                <div class="icon-section">
+                    <i class="fas fa-home"></i>
+                    <p class="location">Grand Ammara Wedding Halls, Jalan Jubli Perak 22/1, Seksyen 22, Batu Tiga, 40000 Shah Alam, Selangor</p>
+                </div>
+            </div>
+
+             <!-----------------------JADUAL ---------------------------------->
+            <div class="schedule">
+                <div class="icon-list">
+                    <i class="fa fa-list"></i>
+                <p class="listmajlis"><strong>10:00 AM</strong> - Majlis Berendoi</p>
+                <p class="listmajlis"><strong>12:00 PM</strong> - Ketibaan Pengantin</p>
+                <p class="listmajlis"><strong>5:00 PM</strong> - Majlis Bersurai</p>
+            </div>
+            <!-----------------------VECTOR ---------------------------------->
+            <div class="vector">
+                <h2 class="symbol">
+                    <img src="vector2.png" alt="vector" />
+                </h2>
+            </div>
+        
+            <div class="decoration"></div>   
+        </div>
+
+        <!-----------------------TIME COUNTDOWN ---------------------------------->
+        <div class="countdown-container">
+            <h3 class="countdown-title">Countdown to the Wedding</h3>
+            <div class="countdown">
+                <div class="countdown-box">
+                    <span id="days">00</span>
+                    <small>Days</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="minutes">00</span>
+                    <small>Minutes</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="seconds">00</span>
+                    <small>Seconds</small>
+                </div>
+            </div>
+        </div>
+
+    <!-----------------------PICTURE FRAME---------------------------------->
+    <div class="slider-container">
+        <button class="slider-btn" id="prevBtn">❮</button>
+        <div class="image-slider">
+            <img src="gamba10.jpg" alt="Image 1">
+            <img src="gamba11.jpg" alt="Image 2">
+            <img src="gamba12.jpg" alt="Image 3">
+        </div>
+        <button class="slider-btn" id="nextBtn">❯</button>
+    </div>
+
+
+     <!-----------------------DOA PENGANTIN---------------------------------->
+     <div class="doa-container">
+        <h4 class="doa-title">DOA PENGANTIN</h4>
+        <p class="doa-text">
+            “Ya Allah, berkatilah majlis perkahwinan ini, limpahkan baraqah dan rahmat kepada kedua mempelai ini, 
+            Kurniakanlah mereka zuriat yang soleh dan solehah. Kekalkan jodoh mereka di dunia dan di akhirat dan 
+            sempurnakanlah agama mereka dengan berkat ikatan ini.”
+        </p>
+    </div>
+
+    <!-----------------------VECTOR ---------------------------------->
+    <div class="vector2">
+        <h2 class="symbol2">
+            <img src="vector.png" alt="vector" />
+        </h2>
+    </div>
+
+    <div class="decoration"></div>   
+</div>
+
+    
+     <!-------------- BUBBLE ANIMATION-------------------------- -->   
+     <div class="bubbles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="bubbles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="bubbles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>    
+    </div>
+
+    <!-- Buttons Fixed at the Bottom -->
+    <div class="button-container" >
+        <button id="rsvpBtn"><i class="fa fa-list"></i> RSVP</button>
+        <button id="locationBtn"><i class="fa fa-map-marker-alt"></i> Location</button>
+        <button id="contactBtn"><i class="fa fa-phone"></i> Contact</button>
+        <button id="calendarBtn"><i class="fa fa-calendar"></i> Calendar</button>
+    </div>
+
+
+    
+    
+
+    <!-- Modal for RSVP -->
+    <div id="rsvpModal" class="modal">
+        <div class="modal-content">
+            <h5>RSVP</h5>
+            <form class="modal-content" method="post" action="https://script.google.com/macros/s/AKfycbyWd1z0R_MwZBvCOd6q9DbWPEsQ0KCpi6chw32kW0pkFzwcgwuDVt7wA-FPn23MfnoZ/exec" name="contact-form">
+                <h5>RSVP</h5>
+                <input type="text" name="your-name" placeholder="Your Name" required>
+                <input type="text" name="your-number" placeholder="Your Number" required>
+                <input type="email" name="your-email" placeholder="Your Email" required>
+                <input type="text" name="message" placeholder="Message" required>
+                <input type="hidden" name="attendance" id="attendanceInput" required>
+                <div class="attendance">
+                    <label>Will you attend?</label>
+                    <div class="attendance-buttons">
+                        <button type="button" class="attendance-btn yes-btn" data-response="Yes, I'll be there!">Yes</button>
+                        <button type="button" class="attendance-btn no-btn" data-response="Sorry, I can't make it.">No</button>
+                    </div>
+                </div>
+                <input class="submit-btn" type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Location -->
+    <div id="locationModal" class="modal">
+        <div class="modal-content">
+
+            <h2>Wedding Location</h2>
+            <p>Click the Google Maps logo below to view the location:</p>
+            <a href="https://calendar.google.com/calendar/u/0?cid=OGU3YzQ1NTU3ZWMxNDg1NGQyODYxODU0ZDUyODkyYzY4MjJjY2ZkOTQyMDZmYjA1Y2Y4OGQ5YjkxZDcxMWM2YkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1200px-Google_Maps_icon_%282020%29.svg.png" alt="Google Maps Logo" class="google-maps-logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal for Contact -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            
+            <h2>Contact Us</h2>
+            <div class="contact-list">
+                <div class="contact-item">
+                    <p>Aizat</p>
+                    <a href="https://wa.me/60123456789" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-logo">
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <p>Ashran</p>
+                    <a href="https://wa.me/60123456789" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Calendar -->
+    <div id="calendarModal" class="modal">
+        <div class="modal-content">
+            
+            <h2>Add to Calendar</h2>
+            <p>Click the Google Calendar logo below to add the event to your calendar:</p>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20231015T000000Z%2F20231015T235959Z&text=Wedding%20of%20John%20%26%20Jane&location=123%20Wedding%20Lane%2C%20Happytown" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg" alt="Google Calendar Logo" class="google-calendar-logo">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle the RSVP form visibility
+        document.getElementById('rsvpBtn').addEventListener('click', function() {
+            const modal = document.getElementById('rsvpModal');
+            if (modal.style.display === 'none' || modal.style.display === '') {
+                modal.style.display = 'block';
+            } else {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Open the location modal when the View Location button is clicked
+        document.getElementById('locationBtn').addEventListener('click', function() {
+            document.getElementById('locationModal').style.display = 'block';
+        });
+
+        // Open the contact modal when the Contact button is clicked
+        document.getElementById('contactBtn').addEventListener('click', function() {
+            document.getElementById('contactModal').style.display = 'block';
+        });
+
+        // Open the calendar modal when the Calendar button is clicked
+        document.getElementById('calendarBtn').addEventListener('click', function() {
+            document.getElementById('calendarModal').style.display = 'block';
+        });
+
+        // Close the location modal
+        function closeLocationModal() {
+            document.getElementById('locationModal').style.display = 'none';
+        }
+
+        // Close the contact modal
+        function closeContactModal() {
+            document.getElementById('contactModal').style.display = 'none';
+        }
+
+        // Close the calendar modal
+        function closeCalendarModal() {
+            document.getElementById('calendarModal').style.display = 'none';
+        }
+
+        // Close the modal when clicking outside the modal
+        window.addEventListener('click', function(event) {
+            if (event.target === document.getElementById('locationModal')) {
+                closeLocationModal();
+            }
+            if (event.target === document.getElementById('contactModal')) {
+                closeContactModal();
+            }
+            if (event.target === document.getElementById('calendarModal')) {
+                closeCalendarModal();
+            }
+            if (event.target === document.getElementById('rsvpModal')) {
+                document.getElementById('rsvpModal').style.display = 'none';
+            }
+        });
+
+        // Handle attendance buttons
+        const attendanceInput = document.getElementById('attendanceInput');
+        const attendanceBtns = document.querySelectorAll('.attendance-btn');
+        attendanceBtns.forEach(button => {
+            button.addEventListener('click', function() {
+                // Set the hidden input value to the selected response
+                attendanceInput.value = button.getAttribute('data-response');
+                alert(`You selected: ${attendanceInput.value}`);
+            });
+        });
+
+
+        
+    document.getElementById("closeModal").addEventListener("click", function() {
+        document.getElementById("rsvpModal").style.display = "none";
+    });
+
+    // Tutup modal jika pengguna klik di luar modal-content
+    window.onclick = function(event) {
+        let modal = document.getElementById("rsvpModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    </script>
+   
+   <script src="GoogleSheet.js"></script>
+</body>
+</html>
+
+
+<!------ 
+ Tambahkan sebelum </body> 
+<script type="module">
+    // Import Firebase
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+  
+    // Konfigurasi Firebase (Gunakan konfigurasi yang diberikan oleh Firebase)
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_PROJECT_ID.appspot.com",
+      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+      appId: "YOUR_APP_ID"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+  ------>
